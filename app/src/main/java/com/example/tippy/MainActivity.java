@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvTipPercentLabel;
     private TextView tvTipAmount;
     private TextView tvTotalAmount;
+    private Button testButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         tvTipPercentLabel = findViewById(R.id.tvTipPercentageLabel);
         tvTipAmount = findViewById(R.id.tvTipAmount);
         tvTotalAmount = findViewById(R.id.tvTotalLabel);
+        testButton = findViewById(R.id.testButton);
 
         seekBarTip.setOnSeekBarChangeListener(
                 new SeekBar.OnSeekBarChangeListener() {
